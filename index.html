@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>?</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="shortcut icon" href="img/decoration/favi.ico" type="image/x-icon" /> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet"  href="css/index.css">
+
+
+<!-- <script src="js/html2canvas.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<body>
+
+<div id="xyz">
+<div class="row bg-warning" style="height:10vh;">頁首</div>
+<div class="row " >
+	<div class=" col-3" style="">
+	<p>任務</p>
+	
+	</div>
+	<div class=" col-8" >
+		<div class="row">
+			<!-- <bread-shelf  v-for="bread in breadList" :data="bread" :key="bread.name"></bread-shelf> -->
+			<scene-bigmap :data="location[nowScene]"></scene-bigmap>
+		</div>
+		
+	</div>
+	<div class="col-1" style="">456
+	</div>
+	
+</div>
+
+</div>
+
+<!-- <iframe src="content.html" style="border:none;"></iframe> -->
+
+</body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script src="js/xyz.js"></script>
+<!-- <script src="js/index.js"></script> -->
