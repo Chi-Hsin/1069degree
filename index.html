@@ -19,20 +19,21 @@
 <body>
 
 <div id="xyz">
-<div class="row bg-warning" style="height:10vh;">頁首</div>
+<!-- <div class="row bg-warning" style="height:10vh;"><button @click="jumpMap">測試轉其他地圖</button></div> -->
 <div class="row " >
 	<div class=" col-3" style="">
-	<p>任務</p>
+	<task :data="taskListFilter"></task>
 	
 	</div>
-	<div class=" col-8" >
-		<div class="row">
-			<!-- <bread-shelf  v-for="bread in breadList" :data="bread" :key="bread.name"></bread-shelf> -->
-			<scene-bigmap :data="location[nowScene]"></scene-bigmap>
+	<div class=" col-8" style="padding:0">
+		<div class="row" style="height:100vh;width:100%;">
+			<component :data="location_temp[sceneIndex]" :is="nowScene"></component>
+			<talking-view :data="talkingListFilter" :talkvisible="talkvisible"></talking-view><!--對話框-->
 		</div>
 		
+		
 	</div>
-	<div class="col-1" style="">456
+	<div class="col-1" style="">這邊先空著哦
 	</div>
 	
 </div>
